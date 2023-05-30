@@ -1,0 +1,42 @@
+:root {
+    --main: #368F90;
+}
+
+.explore {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+}
+
+.explore::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/explore_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    height: 35vh;
+    width: 100%;
+    background-color: var(--main);
+}
+
+.footer * {
+    color: white;
+    font-family: Rubik;
+}
+
+.footer_copy img {
+    width: 165px;
+    height: auto;
+}
+
+.footer_social img {
+    width: 32px;
+    height: auto;
+}

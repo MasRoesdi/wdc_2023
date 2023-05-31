@@ -3,6 +3,7 @@
     --secondary: #1F6574;
     --btn-blue: #4F94D7;
     --stars-yellow: #FFC107;
+    --testimony-text: #767E86;
 }
 
 .testimony {
@@ -17,6 +18,39 @@
     color: var(--main);
 }
 
+.testimony_inner {
+    color: var(--testimony-text);
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.testimony_inner::-webkit-scrollbar {
+    width: 10px;
+}
+
+.testimony_inner::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+.testimony_inner::-webkit-scrollbar-thumb {
+    background-color: #767E8655;
+    border-radius: 1rem;
+}
+
+.testimony_person {
+    position: relative;
+    min-width: 35rem;
+}
+
+.testimony_person img {
+    position: absolute;
+    top: -3rem;
+    left: 3rem;
+    width: 5rem;
+    height: auto;
+    overflow: visible;
+}
+
 .testimony_stars {
     color: var(--stars-yellow);
 }
@@ -29,6 +63,7 @@
     position: relative;
     width: 37.5vw;
     height: 95vh;
+    margin-right: 1.75rem;
 }
 
 .plan_img::before {

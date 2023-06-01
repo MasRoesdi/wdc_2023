@@ -83,7 +83,7 @@
 
 .plan_img {
     position: relative;
-    width: 37.5vw;
+    width: 46.5vw;
     height: 95vh;
     margin-right: 1.75rem;
 }
@@ -106,7 +106,7 @@
 }
 
 .plan_inner form {
-    width: 55vw;
+    width: 45vw;
 }
 
 .plan_inner input {
@@ -123,7 +123,7 @@
 }
 
 .plan_form_name input {
-    width: 26vw;
+    width: 21.5vw;
 }
 
 .contact {

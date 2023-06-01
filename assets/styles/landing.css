@@ -184,42 +184,6 @@
     background-color: var(--btn-blue);
 }
 
-.footer {
-    height: 40vh;
-    width: 100%;
-    background-color: var(--main);
-}
-
-.footer * {
-    color: white;
-    font-family: Rubik;
-}
-
-.footer_copy img {
-    width: 165px;
-    height: auto;
-}
-
-.footer a {
-    width: fit-content;
-}
-
-.social img {
-    width: 32px;
-    height: auto;
-}
-
-@media (max-width: 1199px) {
-    .footer {
-        height: 115vh;
-    }
-
-    .footer > div {
-        height: 105vh;
-        flex-direction: column;
-    }
-}
-
 @media (max-width: 1049px) {
     .destination_place {
         max-width: 40vw;

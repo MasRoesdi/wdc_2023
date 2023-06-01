@@ -11,6 +11,7 @@
 //     body[0].classList.remove('overflow-hidden')
 //     element.style.transform = 'translateY(-100vh)'
 // }
+
 document.addEventListener("DOMContentLoaded", function (event) {
     document.getElementById('onBording').style.backgroundImage = 'url(../../assets/images/on_boarding_background.png)';
 

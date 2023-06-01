@@ -1,7 +1,6 @@
 window.addEventListener('scroll', function () {
     // const scroll = document.getElementById('parentContent').scrollTop
     const scroll = window.scrollY
-    console.log(scroll)
 
     const waterBackground = document.getElementById('water-backgorund')
     const boatBackground = document.querySelectorAll('.boat_background')

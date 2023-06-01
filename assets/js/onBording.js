@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const body = document.getElementsByTagName('body')
 
         body[0].classList.remove('overflow-hidden')
-        element.style.transform = 'translateY(-100vh)'
+        element.style.transform = `translateY(-${window.screen.availHeight}vh)`
     }, 10000)
 })

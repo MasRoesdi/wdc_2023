@@ -17,12 +17,14 @@ window.addEventListener('scroll', function () {
     if (scroll > 28) {
         navbar.classList.add('bg-white/20')
         navbar.classList.add('backdrop-blur-2xl')
+        navbar.classList.remove('backdrop-blur-none')
         menuNavbar.classList.add('text-[#1E1E1E]')
         menuNavbar.classList.remove('text-white')
         logoNavbarPath.style.fill = '#1E1E1E'
     }else{
         navbar.classList.remove('bg-white/20')
         navbar.classList.remove('backdrop-blur-2xl')
+        navbar.classList.add('backdrop-blur-none')
         menuNavbar.classList.add('text-white')
         menuNavbar.classList.remove('text-[#1E1E1E]')
         logoNavbarPath.style.fill = 'white'

@@ -20,60 +20,12 @@
 #hOnBoarding{
     min-height: 60px;
 }
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+#about-us{
+    background-image: url(../images/background_pattern.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
 }
-
- */
-
-/* .on-boarding p {
-    width: 26ch;
-    animation-delay: 2s;
-    animation: typingP 3s steps(25), blinkP 1.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid transparent;
-}
-
-.on-boarding h1 {
-    width: 26ch;
-    animation-delay: 10s;
-    animation: typingH1 3s steps(9), blinkH1 1.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid transparent;
-}
-
-@keyframes typingP {
-    from {
-        width: 0ch;
-    }
-}
-
-@keyframes blinkP {
-    50% {
-        border-color: transparent
-    }
-}
-
-@keyframes typingH1 {
-    from {
-        width: 0ch;
-    }
-}
-
-@keyframes blinkH1 {
-    50% {
-        border-color: transparent
-    }
-} */
-
 header .water-backgorund {
     background-image: url(../images/water_backgorund.jpg);
     background-size: cover;

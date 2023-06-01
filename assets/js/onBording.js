@@ -13,7 +13,7 @@
 // }
 
 document.addEventListener("DOMContentLoaded", function (event) {
-    document.getElementById('onBording').style.backgroundImage = 'url(../../assets/images/on_boarding_background.png)';
+    document.getElementById('onBording').style.backgroundImage = 'url(../../assets/images/on_boarding_background.jpg)';
 
     const background_peta_indonesia = document.getElementById('background_peta_indonesia')
     background_peta_indonesia.style.backgroundImage = 'url(../../assets/images/background_peta_indonesia.png)'

@@ -6,6 +6,28 @@
     --testimony-text: #767E86;
 }
 
+.destination h1, .destination h2 {
+    font-family: Raleway;
+}
+
+.destination h2 {
+    color: var(--main);
+}
+
+.destination_place {
+    max-width: 29.25vw;
+}
+
+.destination_place p {
+    color: var(--secondary);
+}
+
+.destination_place p img {
+    max-width: 1rem;
+    max-height: 1rem;
+    margin-right: .5rem;
+}
+
 .testimony {
     font-family: Rubik;
 }
@@ -199,6 +221,10 @@
 }
 
 @media (max-width: 1049px) {
+    .destination_place {
+        max-width: 40vw;
+    }
+
     .plan_inner {
         padding: 1.5rem;
         flex-direction: column;
@@ -251,6 +277,10 @@
 }
 
 @media (max-width:699px) {
+    .destination_place {
+        max-width: 85vw;
+    }
+
     .plan_inner form {
         width: 80vw;
     }

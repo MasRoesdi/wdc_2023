@@ -22,9 +22,9 @@
 }
 #about-us{
     background-image: url(../images/background_pattern.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center;
+    background-size: contain;
+    /* background-repeat: ; */
+    background-position:top;
 }
 header .water-backgorund {
     background-image: url(../images/water_backgorund.jpg);

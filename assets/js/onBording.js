@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             setTimeout(typeWriterH, speedH);
         }
     }
-    setTimeout(typeWriterP, 5000)
-    setTimeout(typeWriterH, 8000)
+    setTimeout(typeWriterP, 3000)
+    setTimeout(typeWriterH, 6000)
 
     setTimeout(function () {
         const element = document.getElementById('onBording')

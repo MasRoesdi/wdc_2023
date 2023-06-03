@@ -139,7 +139,7 @@
         max-width: 80vw;
     }
 
-    .tours {
+    body .tours {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 2rem;

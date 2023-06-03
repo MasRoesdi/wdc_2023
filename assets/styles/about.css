@@ -53,6 +53,14 @@
     width: max-content;
 }
 
+.teams_inner > div img {
+    width: 16.5vw;
+}
+
+.tours img {
+    width: 10vw;
+}
+
 @media (max-width: 1149px) {
     .pros_item p {
         max-width: 30vw;
@@ -79,6 +87,23 @@
 @media (max-width: 999px) {
     .banner p {
         max-width: 65vw;
+    }
+
+    .teams_inner {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .teams_inner > div {
+        margin-top: 2rem;
+    }
+
+    .teams_inner > div * {
+        text-align: center;
+    }
+
+    .teams_inner > div img {
+        width: 40vw;
     }
 }
 
@@ -112,6 +137,17 @@
 @media (max-width: 799px) {
     .banner p {
         max-width: 80vw;
+    }
+
+    .tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        justify-items: center;
+    }
+
+    .tours img {
+        width: 20vw;
     }
 }
 
@@ -155,6 +191,14 @@
 
     .facilities_text p {
         max-width: max-content;
+    }
+
+    .teams_inner > div img {
+        width: 60vw;
+    }
+
+    .tours img {
+        width: 22.5vw;
     }
 }
 

@@ -26,7 +26,51 @@
     /* background-repeat: ; */
     background-position:top;
 }
-header .water-backgorund {
+.daterangepicker td.active{
+    background-color: #1F6574 !important;
+}
+.applyBtn{
+    background-color: #1F6574 !important;
+    color: white;
+    border-radius: 6px;
+    padding: 10px !important;
+}
+
+@keyframes loader1 {
+    0%{
+        transform: translateY(4px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }100%{
+        transform: translateY(4px);
+    }
+    /* 100%{
+        transform: translateY(5px);
+    } */
+}
+@keyframes loader2 {
+    0%{
+        transform: translateY(2px);
+    }38%{
+        transform: translateY(4px);
+    }76%{
+        transform: translateY(-8px);
+    }100%{
+        transform: translateY(-4px);
+    }
+}
+.loader-1{
+    animation: loader1 600ms infinite;
+}
+.loader-2{
+    animation: loader2 600ms infinite;
+}
+.loader-3{
+    animation: loader1 600ms infinite;
+}
+
+.water-backgorund {
     background-image: url(../images/water_backgorund.jpg);
     background-size: cover;
     background-repeat: no-repeat;

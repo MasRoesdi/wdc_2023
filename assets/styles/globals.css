@@ -4,6 +4,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 6px !important;
+    height: 6px !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(116, 116, 116, 0.644)
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
 body {
     background-color: #EEEEEE;
 }
@@ -40,4 +53,5 @@ body {
     .footer_inner > div {
         margin-bottom: 2rem;
     }
+    /* border: 2px solid black !important; */
 }

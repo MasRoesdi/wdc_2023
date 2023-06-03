@@ -6,6 +6,93 @@
     --testimony-text: #767E86;
 }
 
+/* From Branch Top */
+
+#onBording {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#background_peta_indonesia {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    animation: fadeIn 4s;
+    opacity: 0;
+}
+#pOnBoarding{
+    min-height: 32px;
+}
+#hOnBoarding{
+    min-height: 60px;
+}
+#about-us{
+    background-image: url(../images/background_pattern.png);
+    background-size: contain;
+    /* background-repeat: ; */
+    background-position:top;
+}
+.daterangepicker td.active{
+    background-color: #1F6574 !important;
+}
+.applyBtn{
+    background-color: #1F6574 !important;
+    color: white;
+    border-radius: 6px;
+    padding: 10px !important;
+}
+
+@keyframes loader1 {
+    0%{
+        transform: translateY(4px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }100%{
+        transform: translateY(4px);
+    }
+    /* 100%{
+        transform: translateY(5px);
+    } */
+}
+@keyframes loader2 {
+    0%{
+        transform: translateY(2px);
+    }38%{
+        transform: translateY(4px);
+    }76%{
+        transform: translateY(-8px);
+    }100%{
+        transform: translateY(-4px);
+    }
+}
+.loader-1{
+    animation: loader1 600ms infinite;
+}
+.loader-2{
+    animation: loader2 600ms infinite;
+}
+.loader-3{
+    animation: loader1 600ms infinite;
+}
+
+.water-backgorund {
+    background-image: url(../images/water_backgorund.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header .card{
+    box-shadow: 64.0184px 76.8221px 80px rgba(0, 0, 0, 0.07), 41.4934px 49.7921px 46.8519px rgba(0, 0, 0, 0.0531481), 24.659px 29.5907px 25.4815px rgba(0, 0, 0, 0.0425185), 12.8037px 15.3644px 13px rgba(0, 0, 0, 0.035), 5.21632px 6.25958px 6.51852px rgba(0, 0, 0, 0.0274815), 1.18553px 1.42263px 3.14815px rgba(0, 0, 0, 0.0168519);
+}
+
+.explore {
+    position: relative;
+    min-width: 35rem;
+}
+
+/* From Branch Bottom */
+
 .destination h1, .destination h2 {
     font-family: Raleway;
 }

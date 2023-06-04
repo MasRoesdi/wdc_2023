@@ -1,3 +1,9 @@
+:root {
+    --heading: #3D3E48;
+    --text: #1E1E1E;
+    --tour-text: #A8A7AB;
+}
+
 .banner {
     height: 60vh;
     background-image: url('../images/about-banner.png');
@@ -19,6 +25,14 @@
 
 .general p {
     letter-spacing: 0.05rem;
+}
+
+.pros > h2, .pros > p{
+    color: var(--heading);
+}
+
+.pros_item * {
+    color: var(--text);
 }
 
 .pros_item img {
@@ -44,17 +58,41 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.facilities_items > div {
+    min-width: 22.5vw;
+}
+
 .facilities_items > div img {
     height: 2.5rem;
     width: auto;
+}
+
+.facilities_items * {
+    color: var(--heading);
 }
 
 .facilities_items > div p {
     width: max-content;
 }
 
+.teams > h2, .teams > p {
+    color: var(--heading);
+}
+
+.teams_inner div p {
+    color: var(--text);
+}
+
 .teams_inner > div img {
-    width: 16.5vw;
+    max-width: 16rem;
+}
+
+.tours div {
+    min-width: 20vw;
+}
+
+.tours div h3 {
+    color: var(--tour-text);
 }
 
 .tours img {
@@ -65,6 +103,16 @@
     .pros_item p {
         max-width: 30vw;
     }
+}
+
+@media (max-width: 999px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner p {
+        max-width: 65vw;
+    }
 
     .facilities {
         flex-direction: column;
@@ -74,36 +122,12 @@
         margin-bottom: 2rem;
     }
 
-    .facilities_text h1 {
-        text-align: center;
-    }
-
     .facilities_text p {
-        text-align: justify;
-        max-width: 60vw;
-    }
-}
-
-@media (max-width: 999px) {
-    .banner p {
-        max-width: 65vw;
+        max-width: 100vw;
     }
 
-    .teams_inner {
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .teams_inner > div {
-        margin-top: 2rem;
-    }
-
-    .teams_inner > div * {
-        text-align: center;
-    }
-
-    .teams_inner > div img {
-        width: 40vw;
+    .facilities_items > div {
+        min-width: 45vw;
     }
 }
 
@@ -116,7 +140,13 @@
         margin: 0;
     }
     .general h2 {
-        text-align: center;
+        font-size: 1.75rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+
+    .general p {
+        font-size: 1rem;
     }
 
     .general img {
@@ -130,7 +160,7 @@
     }
 
     .pros_item {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 }
 
@@ -142,31 +172,35 @@
     body .tours {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 2rem;
+        row-gap: .75rem;
+        column-gap: .75rem;
         justify-items: center;
     }
 
+    .tours div {
+        padding-right: 0;
+        padding-left: 0;
+        min-width: 42.5vw;
+        background-color: white;
+    }
+
     .tours img {
-        width: 20vw;
+        width: 15vw;
     }
 }
 
 @media (max-width: 699px) {
-    .general p {
-        text-align: justify;
-    }
-
     .pros_item p {
         font-size: 1rem;
         max-width: 50vw;
     }
 
-    .facilities_items {
-        grid-template-columns: 1fr;
-    }
-
     .facilities_text h1 {
         font-size: 3.5rem;
+    }
+
+    .tours div h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -178,13 +212,13 @@
     .pros p {
         font-size: 1rem;
     }
+
+    .tours div h3 {
+        font-size: .85rem;
+    }
 }
 
 @media (max-width: 499px) {
-    .banner h1 {
-        text-align: center;
-    }
-
     .pros_item p {
         max-width: 65vw;
     }
@@ -193,12 +227,8 @@
         max-width: max-content;
     }
 
-    .teams_inner > div img {
-        width: 60vw;
-    }
-
     .tours img {
-        width: 22.5vw;
+        width: 18.5vw;
     }
 }
 
@@ -207,9 +237,12 @@
         font-size: 3rem;
     }
 
+    .facilities_items {
+        grid-template-columns: 1fr;
+    }
+
     .facilities_items > div {
-        padding-right: 4rem;
-        padding-left: 4rem;
+        min-width: 85vw;
     }
 }
 

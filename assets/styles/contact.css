@@ -48,3 +48,60 @@
     height: 3.5rem;
     background-color: var(--btn-blue);
 }
+
+@media (max-width: 999px) {
+    .contact {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        height: max-content;
+    }
+
+    .contact > div {
+        flex-direction: column;
+    }
+
+    .contact_title {
+        margin-bottom: 4rem;
+    }
+
+    .contact_title h1 {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 699px) {
+    .contact_title h1 {
+        max-width: initial;
+        font-size: 3.75rem;
+    }
+}
+
+@media (max-width:549px) {
+    .contact_title h2 {
+        font-size: 1.85rem;
+    }
+
+    .contact_title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:459px) {
+    .contact_title h2 {
+        font-size: 1.75rem;
+    }
+
+    .contact_title h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width:399px) {
+    .contact_title h2 {
+        font-size: 1.25rem;
+    }
+
+    .contact_title h1 {
+        font-size: 1.9rem;
+    }
+}

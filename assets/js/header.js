@@ -6,15 +6,17 @@ window.addEventListener('touchmove', function () {
 })
 
 function onScroll() {
-    var scroll = window.scrollY
+    let scroll = window.scrollY
+    console.log(scroll)
 
     const waterBackground = document.getElementById('water-backgorund')
     const boatBackground = document.querySelectorAll('.boat_background')
 
-
-    waterBackground.style.transform = `translate(${scroll / 7}px, ${scroll / 7}px)`
-    for (let i = 0; i < boatBackground.length; i++) {
-        boatBackground[i].style.transform = `translate(-${scroll / 7}px, -${scroll / 7}px)`
+    if (waterBackground && boatBackground) {
+        waterBackground.style.transform = `translate(${scroll / 7}px, ${scroll / 7}px)`
+        for (let i = 0; i < boatBackground.length; i++) {
+            boatBackground[i].style.transform = `translate(-${scroll / 7}px, -${scroll / 7}px)`
+        }
     }
 
     const navbar = document.getElementById('navbar');

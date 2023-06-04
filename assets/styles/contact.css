@@ -1,0 +1,50 @@
+:root {
+    --main: #368F90;
+    --secondary: #1F6574;
+    --btn-blue: #4F94D7;
+    --stars-yellow: #FFC107;
+    --testimony-text: #767E86;
+}
+
+.contact {
+    height: 100vh;
+    background-size: cover;
+    background-color: var(--secondary);
+    background-image: url('../images/contact-page.png');
+}
+
+.contact_title * {
+    color: white;
+}
+
+.contact_title h2 {
+    opacity: 0.5;
+}
+
+.contact_title h1 {
+    max-width: 40vw;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form * {
+    margin-bottom: .5rem;
+}
+
+.contact_form label, .contact_form button {
+    color: white;
+}
+
+.contact_form input, .contact_form textarea {
+    min-width: 50vw;
+    min-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact_form button {
+    height: 3.5rem;
+    background-color: var(--btn-blue);
+}

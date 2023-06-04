@@ -213,64 +213,6 @@ header .card{
     width: 21.5vw;
 }
 
-.contact {
-    position: relative;
-    height: 85vh;
-}
-
-.contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--secondary);
-    background-image: url('../images/contact-bg.png');
-}
-
-.contact * {
-    position: relative;
-}
-
-.contact_title * {
-    color: white;
-}
-
-.contact_title h2 {
-    opacity: 0.5;
-}
-
-.contact_title h1 {
-    max-width: 40vw;
-}
-
-.contact_form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact_form * {
-    margin-bottom: .5rem;
-}
-
-.contact_form label, .contact_form button {
-    color: white;
-}
-
-.contact_form input, .contact_form textarea {
-    min-width: 50vw;
-    min-height: 3rem;
-    margin-bottom: 1rem;
-}
-
-.contact_form button {
-    height: 3.5rem;
-    background-color: var(--btn-blue);
-}
-
 @media (max-width: 1049px) {
     .destination_place {
         max-width: 40vw;
@@ -307,26 +249,6 @@ header .card{
     }
 }
 
-@media (max-width: 999px) {
-    .contact {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        height: max-content;
-    }
-
-    .contact > div {
-        flex-direction: column;
-    }
-
-    .contact_title {
-        margin-bottom: 4rem;
-    }
-
-    .contact_title h1 {
-        max-width: 80vw;
-    }
-}
-
 @media (max-width:699px) {
     .destination_place {
         max-width: 85vw;
@@ -338,40 +260,5 @@ header .card{
 
     .plan_form_name input {
         width: 37.5vw;
-    }
-
-    .contact_title h1 {
-        max-width: initial;
-        font-size: 3.75rem;
-    }
-}
-
-@media (max-width:549px) {
-    .contact_title h2 {
-        font-size: 1.85rem;
-    }
-
-    .contact_title h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width:459px) {
-    .contact_title h2 {
-        font-size: 1.75rem;
-    }
-
-    .contact_title h1 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width:399px) {
-    .contact_title h2 {
-        font-size: 1.25rem;
-    }
-
-    .contact_title h1 {
-        font-size: 1.9rem;
     }
 }

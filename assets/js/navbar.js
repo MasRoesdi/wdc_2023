@@ -19,17 +19,17 @@ function onScroll() {
                 menuNavbar.classList.add('text-[#1E1E1E]')
                 menuNavbar.classList.remove('md:text-white')
             }
+            for (let i = 0; i < hamburgerMenu.length; i++) {
+                const element = hamburgerMenu[i];
+                element.classList.add('bg-[#1E1E1E]')
+                element.classList.remove('bg-white')
+            }
         }
         navbar.classList.add('bg-white/20')
         navbar.classList.add('backdrop-blur-xl')
         navbar.classList.remove('backdrop-blur-none')
         // menuNavbar.classList.add('text-[#1E1E1E]')
         // menuNavbar.classList.remove('md:text-white')
-        for (let i = 0; i < hamburgerMenu.length; i++) {
-            const element = hamburgerMenu[i];
-            element.classList.add('bg-[#1E1E1E]')
-            element.classList.remove('bg-white')
-        }
     } else {
         navbar.classList.remove('bg-white/20')
         navbar.classList.remove('backdrop-blur-xl')
@@ -40,11 +40,11 @@ function onScroll() {
                 menuNavbar.classList.add('md:text-white')
                 menuNavbar.classList.remove('text-[#1E1E1E]')
             }
-        }
-        for (let i = 0; i < hamburgerMenu.length; i++) {
-            const element = hamburgerMenu[i];
-            element.classList.remove('bg-[#1E1E1E]')
-            element.classList.add('bg-white')
+            for (let i = 0; i < hamburgerMenu.length; i++) {
+                const element = hamburgerMenu[i];
+                element.classList.remove('bg-[#1E1E1E]')
+                element.classList.add('bg-white')
+            }
         }
     }
 }

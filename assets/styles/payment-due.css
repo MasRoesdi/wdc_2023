@@ -1,0 +1,47 @@
+:root {
+    --main: #368F90;
+    --secondary: #1F6574;
+    --heading: #3D3E48;
+    --text: #1E1E1E;
+    --tour-text: #A8A7AB;
+    --btn-blue: #4F94D7;
+}
+
+main > div > a {
+    background-color: var(--btn-blue);
+}
+
+.card {
+    min-width: 50vw;
+}
+
+.card p {
+    color: var(--text);
+    opacity: .75;
+}
+
+.pay_logo {
+    height: 2.5rem;
+    width: auto;
+}
+
+.copy {
+    height: 2rem;
+    width: auto;
+}
+
+@media (max-width: 799px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 499px) {
+    main.flex h3 {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: .75rem 1.25rem;
+    }
+}

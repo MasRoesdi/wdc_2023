@@ -1,0 +1,101 @@
+:root {
+    --main: #368F90;
+    --secondary: #1F6574;
+    --heading: #3D3E48;
+    --text: #1E1E1E;
+    --tour-text: #A8A7AB;
+    --btn-blue: #4F94D7;
+}
+
+.booking_img {
+    height: 77.5vh;
+    width: 61.5vw;
+    background-image: url('../images/about-banner.png');
+    background-position: 75% 100%;
+    background-size: cover;
+}
+
+.form_inner a {
+    background-color: var(--main);
+}
+
+.form_inner input:nth-child(2) {
+    border-color: var(--main);
+}
+
+.form_inner input:nth-child(2)::placeholder {
+    color: var(--main);
+}
+
+.form_inner td:last-child {
+    text-align: right;
+}
+
+.form_inner button {
+    background-color: var(--btn-blue);
+}
+
+.detail_text {
+    max-width: 46.5vw;
+}
+
+.detail_text h3, .detail_text td, .detail_text p {
+    color: var(--heading);
+}
+
+.detail_text p {
+    opacity: .75;
+}
+
+.detail_text table tr td:first-child{
+    box-sizing: content-box;
+    width: 1rem;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.detail_text a {
+    background-color: var(--main);
+}
+
+.detail_video video {
+    width: 46.5vw;
+}
+
+@media (max-width: 799px) {
+    .booking {
+        margin-top: 8rem;
+        flex-direction: column;
+    }
+
+    .booking_img {
+        height: 25vh;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .details {
+        flex-direction: column;
+    }
+
+    .details * {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .detail_text {
+        max-width: 90vw;
+    }
+
+    .detail_video {
+        margin-bottom: 1rem;
+    }
+
+    .detail_video video {
+        width: 90vw;
+    }
+
+    .details:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/globals.css">
+    <link rel="stylesheet" href="../assets/styles/landing.css">
+    <link rel="stylesheet" href="../assets/styles/destination.css">
+    <link rel="shortcut icon" href="../assets/images/Travelopia.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Select Payment Method | TripWander</title>
+</head>
+
+<body class="bg-[#FAFAFA]">
+
+    <nav id="navbar"
+        class="no-transform w-full backdrop-blur-none flex items-center px-6 lg:px-14 py-6 justify-between fixed top-0 z-40 duration-300">
+        <svg viewBox="0 0 208 50" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="w-[7rem] h-[2rem] lg:w-[12rem] lg:h-[3rem]">
+            <path
+                d="M29.544 0.959999L28.848 2.76C39.12 2.184 45.792 1.896 50.28 1.896C53.832 1.896 56.016 2.088 57.576 2.472C59.184 2.904 60.12 3.576 60.12 4.584C60.12 4.728 60.12 4.872 60.072 5.04V5.064C60.072 5.304 59.904 5.4 59.688 5.4C59.376 5.4 58.992 5.232 58.8 4.944C58.824 4.872 58.824 4.824 58.824 4.752C58.824 4.176 58.272 3.456 57.144 3.144C55.968 2.832 54.432 2.712 52.2 2.712C47.808 2.712 40.776 3.216 28.584 3.888L18.192 29.712C16.752 39.432 10.776 46.8 10.752 46.824C10.632 46.992 10.392 47.088 10.176 47.088C9.96 47.088 9.768 46.992 9.768 46.752C9.768 46.656 9.816 46.536 9.912 46.368L16.776 29.328C17.016 27.6 17.16 25.848 17.16 24.12C17.16 16.992 14.904 10.104 8.76 5.664C7.608 5.736 6.528 5.784 5.544 5.784C2.736 5.784 0.816 5.496 0.431999 5.04C0.288 4.896 0.24 4.752 0.24 4.584C0.24 4.392 0.36 4.176 0.599999 3.96C1.224 3.432 1.944 3.048 2.736 2.856C3.192 2.76 3.648 2.688 4.128 2.688C5.064 2.688 6.048 2.904 7.08 3.336C7.68 3.576 8.28 3.912 8.88 4.32C15.072 3.864 21.24 3.264 27.432 2.856L28.272 0.719999C28.368 0.36 28.632 0.191998 28.896 0.191998C29.232 0.191998 29.544 0.455998 29.544 0.863997V0.959999ZM13.488 40.08C14.064 38.832 14.64 37.416 15.168 35.904L13.488 40.08ZM22.104 17.352L26.88 4.128C21.312 4.536 15.792 5.16 10.176 5.568C16.008 10.56 18.024 17.448 18.024 24.72C18.024 25.224 18.024 25.728 18 26.232L22.104 17.352ZM7.2 4.44C7.032 4.368 6.864 4.296 6.72 4.224C5.808 3.84 4.92 3.648 4.104 3.648C3.72 3.648 3.312 3.696 2.952 3.792C2.4 3.936 1.872 4.176 1.44 4.536C1.728 4.608 2.208 4.632 2.88 4.632C3.936 4.632 5.4 4.56 7.2 4.44ZM34.0329 21.264L32.8569 24.168C33.7929 22.176 35.1609 20.904 36.3129 20.904C36.8169 20.904 37.2729 21.144 37.6569 21.648C38.5449 23.616 42.0969 23.976 44.7609 23.976C45.9369 23.976 46.9449 23.904 47.4489 23.88C47.7369 23.856 47.9529 23.64 48.0009 23.64C48.0969 23.616 48.1929 23.592 48.2409 23.592C48.3849 23.592 48.4329 23.664 48.4329 23.736C48.4329 23.904 48.2649 24.144 48.0729 24.192C47.9529 24.312 46.1289 24.6 43.9929 24.6C41.3769 24.6 38.2809 24.168 37.0809 22.488C36.9369 22.296 36.7689 22.2 36.6009 22.2C34.8969 22.2 31.7529 29.712 31.7289 29.736V29.784C31.7289 30.072 31.3929 30.192 31.0329 30.192C30.6009 30.192 30.1209 30.024 30.1209 29.784C30.1209 29.736 30.1449 29.712 30.1449 29.688L32.1849 21.144C32.3529 20.688 32.7369 20.52 33.1209 20.52C33.5769 20.52 34.0329 20.784 34.0329 21.216V21.264ZM51.2602 22.512C51.2602 22.512 49.7242 25.296 49.7242 26.976C49.7242 27.48 49.8682 27.888 50.2042 28.104C50.3242 28.2 50.5162 28.224 50.7562 28.224C53.5642 28.224 64.1962 23.64 64.1962 23.64C64.3882 23.496 64.5562 23.448 64.7242 23.448C65.1562 23.448 65.4682 23.784 65.4682 24.024C65.4682 24.072 65.4682 24.12 65.4202 24.168C65.3962 24.168 54.3322 28.992 50.3242 28.992C49.7242 28.992 49.2682 28.896 49.0522 28.632C48.3802 28.2 48.1402 27.384 48.1402 26.472C48.1402 24.792 48.9562 22.752 49.3882 22.008C49.5802 21.6 49.9162 21.432 50.2762 21.432C50.7802 21.432 51.2842 21.792 51.2842 22.296C51.2842 22.368 51.2842 22.44 51.2602 22.512ZM52.1242 16.896C52.4362 17.016 52.6282 17.352 52.6282 17.76C52.6282 17.928 52.6042 18.096 52.5322 18.264C52.3642 18.768 51.9562 19.104 51.5722 19.104C51.5002 19.104 51.4282 19.104 51.3562 19.08C51.0442 18.96 50.8522 18.624 50.8522 18.216C50.8522 18.048 50.8762 17.88 50.9482 17.712C51.1402 17.208 51.5482 16.872 51.9322 16.872C52.0042 16.872 52.0522 16.872 52.1242 16.896ZM67.281 20.064L64.377 30.312C65.169 28.56 68.169 20.328 72.081 20.328C72.441 20.328 72.825 20.4 73.209 20.544C74.121 21.192 74.481 22.536 74.481 23.712C74.481 24.048 74.433 24.408 74.385 24.696C76.425 24.048 78.417 23.544 80.409 23.544C80.673 23.544 80.937 23.544 81.225 23.568C81.441 23.592 81.513 23.76 81.513 23.952C81.513 24.264 81.273 24.648 80.985 24.648H80.937C80.289 24.576 79.665 24.528 79.041 24.528C77.505 24.528 76.017 24.792 74.337 25.392C73.521 27.744 71.337 30.648 68.601 30.936C68.433 30.96 68.289 30.96 68.169 30.96C67.497 30.96 67.137 30.768 66.873 30.552C66.633 30.384 66.537 30.168 66.537 29.952C66.537 28.296 72.513 25.512 73.233 25.104C73.257 25.056 73.281 24.984 73.305 24.936C73.329 24.768 73.353 24.552 73.353 24.312C73.353 23.376 73.089 22.008 72.537 21.624C72.153 21.312 71.745 21.168 71.361 21.168C67.065 21.168 62.481 38.52 61.257 43.536C61.233 43.608 61.233 43.704 61.233 43.8C61.233 44.016 61.257 44.304 61.257 44.496V44.64C61.233 44.736 60.993 44.808 60.753 44.808C60.441 44.808 60.057 44.688 60.057 44.328C60.057 44.28 60.057 44.232 60.081 44.184C61.713 36.096 63.369 30 65.577 21.816L65.505 20.256C65.577 19.68 66.057 19.44 66.489 19.44C66.897 19.44 67.281 19.656 67.281 19.968V20.064ZM68.193 30.264C70.257 30.072 72.129 27.744 72.945 25.92C70.857 26.664 67.161 29.064 67.161 29.856C67.161 29.928 67.209 29.976 67.257 30.024C67.377 30.12 67.449 30.288 67.905 30.288C68.001 30.288 68.073 30.264 68.193 30.264ZM95.0812 7.584C94.8172 7.68 92.8972 8.856 92.3452 9.696C89.1532 12.984 83.6572 27.72 83.6572 37.056C83.6572 40.44 84.3772 43.104 86.1772 44.28C86.5612 44.448 86.9452 44.52 87.3292 44.52C94.0972 44.52 101.489 21 101.513 20.904C101.681 20.28 102.041 20.016 102.425 20.016C102.929 20.016 103.457 20.544 103.457 21.288V21.36C103.433 21.408 101.681 29.4 101.681 36.672C101.681 42.696 102.881 48.216 107.321 48.312H107.393C115.985 48.312 124.601 19.128 124.601 7.464C124.601 6.984 124.577 6.528 124.553 6.096C124.433 4.584 122.921 4.32 122.537 3.312C122.441 3.072 122.417 2.832 122.417 2.592C122.417 1.752 122.849 0.935998 123.497 0.935998C123.785 0.935998 124.097 1.104 124.457 1.488C125.417 2.472 125.873 4.656 125.873 7.56C125.873 20.76 116.801 49.08 107.561 49.08H107.465C101.897 48.96 100.505 41.424 100.505 33.912C100.505 30.936 100.745 27.96 101.009 25.44C98.2252 33.408 92.6092 45.216 87.0412 45.216C86.4172 45.216 85.7932 45.072 85.1692 44.736C83.0332 43.344 82.2172 40.488 82.2172 36.912C82.2172 27.168 88.3612 12.216 91.4812 7.752C92.1772 6.696 92.8012 6.024 93.3052 5.832C93.5212 5.712 93.7372 5.664 93.9292 5.664C94.6492 5.664 95.1532 6.384 95.1532 7.104C95.1532 7.272 95.1292 7.416 95.0812 7.584ZM133.255 24.048C132.919 24.384 132.775 24.504 132.367 24.888C130.471 26.688 128.311 28.704 127.279 28.704C127.255 28.704 127.207 28.68 127.159 28.68C126.895 28.632 126.703 28.488 126.535 28.296C126.343 28.056 126.271 27.768 126.271 27.432C126.271 27.312 126.271 27.192 126.295 27.072C126.343 26.688 126.487 26.208 126.727 25.728C127.423 24.192 128.911 22.392 130.759 21.84C131.239 21.696 131.671 21.648 132.055 21.648C132.799 21.648 133.351 21.888 133.711 22.248C134.431 21.648 135.271 21.048 135.727 21.048C135.799 21.048 135.871 21.072 135.919 21.096C136.231 21.144 136.399 21.456 136.399 21.984C136.399 22.56 136.207 23.376 135.799 24.408C135.535 25.128 135.415 25.728 135.415 26.208C135.415 27.456 136.207 27.912 137.383 27.912C140.431 27.912 146.095 24.696 146.935 23.64C147.079 23.352 147.247 23.256 147.391 23.256C147.607 23.256 147.751 23.448 147.751 23.712C147.751 23.856 147.703 24 147.583 24.144C147.295 24.552 140.863 28.32 137.119 28.32C135.583 28.32 134.503 27.672 134.503 25.872C134.503 25.392 134.575 24.84 134.743 24.168C134.887 23.256 135.199 22.416 135.199 22.224V22.2C135.199 22.2 134.839 22.536 134.287 23.064C134.383 23.352 134.383 23.64 134.383 23.784V23.88C134.167 24.192 133.879 24.336 133.615 24.336C133.519 24.336 133.423 24.312 133.327 24.264L133.255 24.048ZM132.343 23.424C132.223 23.328 132.103 23.304 131.959 23.304C130.807 23.304 128.791 25.92 128.791 26.472C128.791 26.544 128.839 26.592 128.935 26.592C129.391 26.592 130.831 25.44 132.343 23.424ZM150.493 21.12L148.861 26.568C150.205 24.816 151.573 23.304 152.629 23.304C153.109 23.304 153.517 23.592 153.829 24.264C154.885 26.688 156.157 27.624 157.621 27.624C159.517 27.624 161.773 26.016 164.341 24.144C164.437 24.024 164.557 24 164.653 24C164.893 24 165.109 24.24 165.109 24.456C165.109 24.576 165.037 24.696 164.893 24.768C162.973 26.28 160.093 28.44 157.477 28.44C155.845 28.44 154.309 27.6 153.205 25.152C153.133 24.936 153.013 24.84 152.869 24.84C151.645 24.84 148.117 29.784 148.069 30.288C147.925 30.6 147.469 30.768 147.085 30.768C146.749 30.768 146.461 30.624 146.461 30.312V30.216L148.789 20.904C148.909 20.424 149.269 20.208 149.629 20.208C150.061 20.208 150.493 20.52 150.493 21.072V21.12ZM171.199 22.776C171.199 22.776 171.103 21.744 170.215 21.744C170.143 21.744 170.071 21.768 169.999 21.768C168.943 21.936 167.455 23.376 166.423 25.176C165.895 26.064 165.415 27.408 165.415 28.128C165.415 28.44 165.511 28.632 165.727 28.632C166.015 28.632 166.543 28.248 167.407 27.24C170.335 23.856 171.199 22.776 171.199 22.776ZM173.719 19.56C175.783 15.984 178.879 9.984 179.335 8.904C179.671 8.088 180.223 6.96 180.223 6.48C180.223 6.336 180.175 6.264 180.055 6.264H180.031C179.455 6.312 178.135 8.472 178.135 8.472C176.143 11.616 173.719 19.56 173.719 19.56ZM171.943 21.912C173.839 16.536 175.447 11.688 177.823 7.704C178.975 5.784 179.815 5.232 180.367 5.232C180.847 5.232 181.087 5.688 181.087 5.976C181.087 6.024 181.087 6.072 181.063 6.12V6.288C181.063 11.208 172.471 22.92 172.471 22.92L170.719 27.672C169.159 31.968 168.391 37.128 168.391 39.48C168.391 39.768 168.391 39.984 168.415 40.176C168.607 42.024 169.735 42.6 170.167 42.6C170.455 42.6 170.743 42.864 170.743 43.128C170.743 43.272 170.671 43.392 170.503 43.488C170.431 43.536 170.335 43.56 170.239 43.56C169.807 43.56 169.327 43.032 169.327 43.032C168.223 41.856 168.007 39.72 168.007 39.72C167.983 39.432 167.983 39.144 167.983 38.856C167.983 34.008 170.263 26.544 171.199 24.528C171.199 24.528 167.815 28.632 166.207 29.4C165.919 29.544 165.631 29.616 165.391 29.616C164.599 29.616 164.095 28.896 164.095 27.768C164.095 27.336 164.191 26.856 164.335 26.304C165.007 23.88 166.471 21.216 168.775 20.592C169.087 20.496 169.375 20.472 169.663 20.472C171.295 20.472 171.943 21.912 171.943 21.912ZM179.066 24.6C180.602 23.28 181.178 22.488 181.178 22.272C181.178 22.224 181.154 22.2 181.106 22.2C180.626 22.272 180.17 23.16 179.066 24.6ZM182.618 22.008C182.618 22.104 182.642 22.176 182.642 22.272C182.642 24.288 179.402 25.584 178.73 25.848C178.73 25.992 178.706 26.16 178.706 26.328C178.706 26.904 178.802 27.576 179.09 28.008C179.402 28.488 179.93 28.704 180.602 28.704C183.914 28.704 190.538 23.712 190.562 23.688C190.658 23.616 190.754 23.592 190.85 23.592C191.162 23.592 191.426 23.88 191.426 24.168C191.426 24.288 191.354 24.408 191.234 24.504C191.186 24.528 184.73 29.184 180.794 29.184C179.762 29.184 178.898 28.872 178.37 28.056C177.914 27.384 177.746 26.664 177.746 25.968C177.746 24.624 178.418 23.352 179.21 22.416C179.642 21.912 180.122 21.528 180.554 21.288C180.89 21.096 181.202 21 181.514 21C181.682 21 181.85 21.024 181.994 21.096C182.33 21.24 182.57 21.552 182.618 22.008ZM193.471 21.264L192.295 24.168C193.231 22.176 194.599 20.904 195.751 20.904C196.255 20.904 196.711 21.144 197.095 21.648C197.983 23.616 201.535 23.976 204.199 23.976C205.375 23.976 206.383 23.904 206.887 23.88C207.175 23.856 207.391 23.64 207.439 23.64C207.535 23.616 207.631 23.592 207.679 23.592C207.823 23.592 207.871 23.664 207.871 23.736C207.871 23.904 207.703 24.144 207.511 24.192C207.391 24.312 205.567 24.6 203.431 24.6C200.815 24.6 197.719 24.168 196.519 22.488C196.375 22.296 196.207 22.2 196.039 22.2C194.335 22.2 191.191 29.712 191.167 29.736V29.784C191.167 30.072 190.831 30.192 190.471 30.192C190.039 30.192 189.559 30.024 189.559 29.784C189.559 29.736 189.583 29.712 189.583 29.688L191.623 21.144C191.791 20.688 192.175 20.52 192.559 20.52C193.015 20.52 193.471 20.784 193.471 21.216V21.264Z"
+                fill="#1E1E1E" id="logo-navbar-path" />
+        </svg>
+        <div class="space-y-1 me-2 p-3 rounded-lg md:hidden" onclick="openMenu()">
+            <span class="hamburger-menu block w-5 h-0.5 bg-[#1E1E1E]"></span>
+            <span class="hamburger-menu block w-5 h-0.5 bg-[#1E1E1E]"></span>
+            <span class="hamburger-menu block w-5 h-0.5 bg-[#1E1E1E]"></span>
+        </div>
+        <div id="menu-navbar"
+            class="hidden md:flex absolute md:static h-screen w-full md:w-auto md:h-auto left-0 right-0 bottom-0 top-0 flex-col md:flex-row justify-center md:justify-normal gap-y-5 md:gap-y-0 gap-x-10 text-black md:text-[#1E1E1E] backdrop-blur-xl md:backdrop-blur-none bg-white/95 md:bg-white/0 items-center text-xl md:text-base transition-all duration-300 translate-y-full md:translate-y-0 z-50">
+            <a href="../index.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">Home</a>
+            <a href="../pages/about.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">About Us</a>
+            <a href="../pages/destination.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">Destination</a>
+            <a href="" class="font-['Raleway'] font-bold" onclick="closeMenu()">Trip Plan</a>
+            <a href="" class="font-['Raleway'] font-bold" onclick="closeMenu()">Contact Us</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-14 h-14 mt-8 md:hidden" onclick="closeMenu()">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+    </nav>
+
+    <section class="flex px-6 lg:px-14 mt-24 md:mt-40 mb-20 gap-x-5 flex-col lg:flex-row">
+        <div id="select-payment-method" class="p-5 w-full lg:w-1/2 bg-white rounded-[15px] border border-[#1E1E1E4D]">
+            <h1 class="font-['Poppins'] text-2xl font-medium text-[#1E1E1E] text-center">Select Payment Method</h1>
+            <h2 class="mt-[3.5rem] font-['Poppins'] text-xl text-[#1E1E1E] font-medium">Transfer Virtual Account</h2>
+
+            <button id="mandiri" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/mandiri.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-start text-sm">Mandiri Virtual Account</p>
+            </button>
+            <button id="bca" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/bca.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">BCA Virtual Account</p>
+            </button>
+            <button id="bni" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/bni.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">BNI Virtual Account</p>
+            </button>
+            
+            <h2 class="mt-[1.5rem] font-['Poppins'] text-xl text-[#1E1E1E] font-medium">E-Wallet</h2>
+            <button id="ovo" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/ovo.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">OVO</p>
+            </button>
+            <button id="gopay" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/gopay.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Gopay</p>
+            </button>
+            <button id="dana" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/dana.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Dana</p>
+            </button>
+            <button id="flip" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/flip.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Flip</p>
+            </button>
+            <button id="paypal" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/paypal.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Paypal</p>
+            </button>
+            <button id="gpay" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/Gpay.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Gpay</p>
+            </button>
+            <button id="mastercard" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/mastercard.svg"  class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Mastercard</p>
+            </button>
+            <button id="visa" class="w-full flex items-center p-5 hover:bg-slate-100 focus:bg-[#4F94D74D]">
+                <object type="image/svg+xml" data="../assets/images/visa.svg"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5">Visa</p>
+            </button>
+        </div>
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
+            <div class="w-full bg-white border border-[#1E1E1E4D] rounded-[20px] p-7" style="box-shadow: 0px 335px 134px rgba(0, 0, 0, 0.01), 0px 188px 113px rgba(0, 0, 0, 0.05), 0px 84px 84px rgba(0, 0, 0, 0.09), 0px 21px 46px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+                <object data="../assets/images/logo_tripwander.svg" type="image/svg+xml" class="w-40 m-auto"></object>
+                <div class="flex gap-x-5 items-center mt-10">
+                    <img src="../assets/images/payment_raja_ampat.jpg" alt="payment_raja_ampat" class="rounded-[16px] w-[9.3rem] h-[7.5rem] lg:h-[6.25rem] object-cover">
+                    <h1 class="text-[#1E1E1E] font-['Poppins'] font-semibold text-xl lg:text-3xl">Trip to Raja Ampat 3 Days 2 Nights</h1>
+                </div>
+                <div class="mt-10 flex flex-col gap-y-4">
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Payment method</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Virtual Account - </p>
+                    </div>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Tourist Destinations</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] truncate">Raja Ampat, Papua</p>
+                    </div>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Tour Duration</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">3 Days 2 Nights</p>
+                    </div>
+                    <hr>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Promo Code</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">-</p>
+                    </div>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Subtotal</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 560.000,00</p>
+                    </div>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">PPN(11%)</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 61.600,00</p>
+                    </div>
+                    <div class="flex w-full justify-between gap-x-1">
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Total</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 621.600,00</p>
+                    </div>
+                </div>
+                <a href="" class="w-full p-4 bg-[#4F94D7] block text-center mt-10 font-['Poppins'] text-md md:text-2xl text-white rounded-[10px] focus:outline outline-offset-2 outline-[#4F94D7] ">Pay</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer flex items-center px-8 py-16">
+        <div class="footer_inner w-full flex justify-between">
+            <div class="footer_copy flex flex-col">
+                <img class="mb-1 text-lg" src="../assets/images/Travelopia.png" alt="Travelopia logo">
+                <p class="text-sm">Copyright &copy; Travellian 2020 All rights reserved</p>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-medium text-2xl mb-3">Menu</h3>
+                <a class="mb-1 text-lg" href="../index.html">Home</a>
+                <a class="mb-1 text-lg" href="../pages/about.html">About Us</a>
+                <a class="mb-1 text-lg" href="../pages/destination.html">Destination</a>
+                <a class="mb-1 text-lg" href="#">Trip Plan</a>
+                <a class="mb-1 text-lg" href="#">Contact Us</a>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-medium text-2xl mb-3">Information</h3>
+                <a class="mb-1 text-lg" href="#">Destination</a>
+                <a class="mb-1 text-lg" href="#">Supports</a>
+                <a class="mb-1 text-lg" href="#">Terms & Conditions</a>
+                <a class="mb-1 text-lg" href="#">Privacy</a>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-medium text-2xl mb-3">Contact Info</h3>
+                <a class="mb-1 text-lg" href="#">+123 456 789</a>
+                <a class="mb-1 text-lg" href="#">info@travellian.com</a>
+                <a class="mb-1 text-lg" href="#">1245, New York, USA</a>
+            </div>
+            <div class="flex flex-col">
+                <h3 class="font-medium text-2xl mb-3">Follow us on</h3>
+                <div class="social flex items-center">
+                    <a class="mr-6" href="#" class="mr-4"><img src="../assets/images/facebook.png"
+                            alt="Facebook logo"></a>
+                    <a class="mr-6" href="#" class="mr-4"><img src="../assets/images/pinterest.png"
+                            alt="Pinterest logo"></a>
+                    <a class="mr-6" href="#" class="mr-4"><img src="../assets/images/insta.png"
+                            alt="Instagram logo"></a>
+                    <a class="mr-6" href="#" class="mr-4"><img src="../assets/images/twitter.png"
+                            alt="Twitter logo"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/navbar.js"></script>
+</body>
+
+</html>

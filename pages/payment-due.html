@@ -51,12 +51,82 @@
             </svg>
         </div>
     </div>
-    <main class="flex flex-col justify-center items-center h-[110vh]">
+    <main class="flex flex-col justify-center items-center py-24">
+        <div id="details_display" class="flex justify-center items-center px-5">
+            <div class="bg-white p-8 rounded-lg flex flex-col">
+                <img class="self-center" src="../assets/images/Travelopia-black.png" alt="logo-black">
+                <h3 class="font-medium mt-8 mb-6 text-center">The following is a detailed proof of the transaction</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Customer name</td>
+                            <td class="py-1 text-right">John Cornor</td>
+                        </tr>
+                        <tr>
+                            <td>Booking date</td>
+                            <td class="py-1 text-right">15/06/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Bank number</td>
+                            <td class="py-1 text-right">2323-14553-2452-21</td>
+                        </tr>
+                        <tr>
+                            <td>Bank type</td>
+                            <td class="py-1 text-right">BCA</td>
+                        </tr>
+                        <tr>
+                            <td>Trip name</td>
+                            <td class="py-1 text-right">Trip to Raja Ampat</td>
+                        </tr>
+                        <tr>
+                            <td>Tourist Destinations</td>
+                            <td class="py-1 text-right">Raja Ampat, Papua</td>
+                        </tr>
+                        <tr>
+                            <td>Tour Duration</td>
+                            <td class="py-1 text-right">3 Days 2 Nights</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="my-4 border border-slate-400"></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Promo code</td>
+                            <td class="py-1 text-right">-</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td class="py-1 text-right">Rp 560.000,-</td>
+                        </tr>
+                        <tr>
+                            <td>PPN (11%)</td>
+                            <td class="py-1 text-right">Rp 61,600</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td class="py-1 text-right">Rp 621.000,-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a id="close" class="bg-red-500 text-white text-center py-1 px-3 rounded-lg" href="#">X</a>
+                <div class="flex w-full mt-8">
+                    <a class="py-3 rounded-md w-full text-center mr-4" href="#">Share Transaction</a>
+                    <a id="ok" class="text-white py-3 rounded-md w-full text-center flex justify-center items-center" href="#">OK</a>
+                </div>
+            </div>
+        </div>
         <div class="flex flex-col justify-center items-center">
-            <h2 class="text-2xl font-semibold">Complete payment in</h2>
-            <h1 class="text-5xl font-bold text-[red] my-4" id="countdown">24:00:00</h1>
-            <p class="mb-2">Payment deadline</p>
-            <h2 class="text-2xl font-semibold mb-6">15/06/2023</h2>
+            <div id="due" class="flex flex-col justify-center items-center">
+                <h2 class="text-2xl font-semibold">Complete payment in</h2>
+                <h1 class="text-5xl font-bold text-[red] my-4" id="countdown">24:00:00</h1>
+                <p class="mb-2">Payment deadline</p>
+                <h2 class="text-2xl font-semibold mb-6">15/06/2023</h2>
+            </div>
+            <div id="done" class="flex flex-col justify-center items-center mb-6">
+                <h2 class="text-2xl font-semibold mb-6">Payment Successful</h2>
+                <img src="../assets/images/payment_check.png" alt="Payment Done">
+            </div>
             <div class="card bg-white p-8 my-6 shadow-lg rounded-lg">
                 <div class="flex justify-between items-center p-4">
                     <h3 class="text-xl font-medium">BCA Virtual Account</h3>
@@ -71,10 +141,13 @@
                 </div>
                 <div class="flex flex-col p-4">
                     <p class="text-md">Total payment</p>
-                    <h3 class="text-xl font-medium">Rp 621.000,-</h3>
+                    <h3 class="text-xl font-medium">Rp 621.600,-</h3>
                 </div>
             </div>
-            <a class="text-white py-3 rounded-md w-full text-center" href="./payment-done.html">Home</a>
+            <div class="flex w-full">
+                <a id="details" class="py-3 rounded-md w-full text-center mr-4" href="#">See details</a>
+                <a class="text-white py-3 rounded-md w-full text-center" href="../index.html">Home</a>
+            </div>
         </div>
     </main>
     <footer class="footer flex items-center px-8 py-16">

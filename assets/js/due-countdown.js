@@ -19,3 +19,29 @@ var counter = setInterval(function () {
         head.innerHTML = "EXPIRED"
     }
 }, 1000)
+
+const component_due = document.getElementById('due')
+const component_done = document.getElementById('done')
+const btn_details = document.getElementById('details')
+
+setTimeout(function () {
+    component_due.style.display = 'none'
+    component_done.style.display = 'flex'
+    btn_details.style.display = "initial"
+}, 5000)
+
+const details_display = document.getElementById('details_display')
+const btn_close = document.getElementById('close')
+const btn_ok = document.getElementById('ok')
+
+btn_details.onclick = function () {
+    details_display.style.display = 'flex'
+}
+
+btn_close.onclick = function () {
+    details_display.style.display = 'none'
+}
+
+btn_ok.onclick = function () {
+    details_display.style.display = 'none'
+}

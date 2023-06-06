@@ -7,12 +7,64 @@
     --btn-blue: #4F94D7;
 }
 
-main > div > a {
+table tbody tr td:last-child {
+    color: var(--text);
+    opacity: .75;
+}
+
+#details_display {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    backdrop-filter: brightness(.75);
+}
+
+#close {
+    width: min-content;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#details_display {
+    display: none;
+    overflow-y: auto;
+}
+
+#details_display > div {
+    position: relative;
+    min-width: 45vw;
+}
+
+#details_display > div img {
+    height: 2.5rem;
+    width: fit-content;
+}
+
+main > div > div:first-child > div > a:first-child {
+    color: var(--heading);
+    border: 1px solid var(--heading);
+}
+
+main > div > div:first-child > div > a:last-child {
+    background-color: var(--btn-blue);
+}
+
+main > div > div:last-child > a:first-child {
+    display: none;
+    color: var(--btn-blue);
+    border: 1px solid var(--btn-blue);
+}
+
+main > div > div:last-child > a:last-child {
     background-color: var(--btn-blue);
 }
 
 .card {
-    min-width: 50vw;
+    min-width: 40vw;
 }
 
 .card p {
@@ -30,6 +82,20 @@ main > div > a {
     width: auto;
 }
 
+#done {
+    display: none;
+}
+
+#done img {
+    width: 10rem;
+}
+
+@media (max-width: 999px) {
+    .card {
+        width: 55vw;
+    }
+}
+
 @media (max-width: 799px) {
     .card {
         width: 90vw;
@@ -37,11 +103,31 @@ main > div > a {
 }
 
 @media (max-width: 499px) {
+    #details_display > div {
+        min-width: none;
+    }
+
+    #details_display * {
+        font-size: .75rem;
+    }
+    
+    main.flex h1 {
+        font-size: 2.25rem;
+    }
+
+    main.flex h2 {
+        font-size: 1.25rem;
+    }
+
+    #done img {
+        width: 25vw;
+    }
+
     main.flex h3 {
         font-size: 1rem;
     }
 
-    .card {
+    div.card {
         padding: .75rem 1.25rem;
     }
 }

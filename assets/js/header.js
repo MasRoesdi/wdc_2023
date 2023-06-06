@@ -1,24 +1,45 @@
 window.addEventListener('scroll', function () {
-    onScroll()
-})
-window.addEventListener('touchmove', function () {
-    onScroll()
-})
-
-function onScroll() {
-    let scroll = window.scrollY
-    console.log(scroll)
+    let scrollPosition = window.scrollY
+    // console.log(scrollPosition)
 
     const waterBackground = document.getElementById('water-backgorund')
     const boatBackground = document.querySelectorAll('.boat_background')
 
-    if (waterBackground && boatBackground) {
-        waterBackground.style.transform = `translate(${scroll / 7}px, ${scroll / 7}px)`
-        for (let i = 0; i < boatBackground.length; i++) {
-            boatBackground[i].style.transform = `translate(-${scroll / 7}px, -${scroll / 7}px)`
-        }
+    // if (waterBackground != undefined && boatBackground != undefined) {
+    waterBackground.style.transform = `translate(${scrollPosition / 7}px, ${scrollPosition / 7}px)`
+    for (let i = 0; i < boatBackground.length; i++) {
+        boatBackground[i].style.transform = `translate(-${scrollPosition / 7}px, -${scrollPosition / 7}px)`
     }
-}
+    // }
+})
+window.addEventListener('touchmove', function () {
+    let scrollPosition = window.scrollY
+
+    const waterBackground = document.getElementById('water-backgorund')
+    const boatBackground = document.querySelectorAll('.boat_background')
+
+    // if (waterBackground != undefined && boatBackground != undefined) {
+    waterBackground.style.transform = `translate(${scrollPosition / 7}px, ${scrollPosition / 7}px)`
+    for (let i = 0; i < boatBackground.length; i++) {
+        boatBackground[i].style.transform = `translate(-${scrollPosition / 7}px, -${scrollPosition / 7}px)`
+    }
+    // }
+})
+
+// function onScroll() {
+//     let scrollPosition = window.scrollY
+//     console.log(scrollPosition)
+
+//     const waterBackground = document.getElementById('water-backgorund')
+//     const boatBackground = document.querySelectorAll('.boat_background')
+
+//     // if (waterBackground != undefined && boatBackground != undefined) {
+//     waterBackground.style.transform = `translate(${scrollPosition / 7}px, ${scrollPosition / 7}px)`
+//     for (let i = 0; i < boatBackground.length; i++) {
+//         boatBackground[i].style.transform = `translate(-${scrollPosition / 7}px, -${scrollPosition / 7}px)`
+//     }
+//     // }
+// }
 
 const waterBackground = document.getElementById('water-backgorund')
 const parentBackgroundParent = document.getElementById('parentBackgroundParent')

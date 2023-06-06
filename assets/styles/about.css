@@ -142,7 +142,7 @@
     .general h2 {
         font-size: 1.75rem;
         margin: 0;
-        margin-bottom: .5rem;
+        margin-bottom: .5rem !important;
     }
 
     .general p {
@@ -150,17 +150,17 @@
     }
 
     .general img {
-        margin-top: 2rem;
+        margin-top: 2rem !important;
         width: 90vw;
     }
     
     .pros_inner {
-        margin-top: 1rem;
+        margin-top: 1rem !important;
         flex-direction: column;
     }
 
     .pros_item {
-        margin: 1rem 0;
+        margin: 1rem 0 !important;
     }
 }
 
@@ -178,8 +178,8 @@
     }
 
     .tours div {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
         min-width: 42.5vw;
         background-color: white;
     }
@@ -191,44 +191,44 @@
 
 @media (max-width: 699px) {
     .banner {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 
     .general {
-        margin-right: 1.5rem;
-        margin-left: 1.5rem;
+        margin-right: 1.5rem !important;
+        margin-left: 1.5rem !important;
     }
 
     .pros {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
 
     .facilities {
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        margin-top: 1.5rem;
-        margin-bottom: 3rem;
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 3rem !important;
     }
 
     .teams {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
     }
 
     .teams_inner {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 
     .tours {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        margin-top: 2.5rem !important;
+        margin-bottom: 2.5rem !important;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 
     .pros_item p {

@@ -51,8 +51,8 @@
 
 @media (max-width: 999px) {
     .contact {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 8rem !important;
+        padding-bottom: 8rem !important;
         height: max-content;
     }
 
@@ -71,8 +71,8 @@
 
 @media (max-width: 799px) {
     .contact {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 }
 

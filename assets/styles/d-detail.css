@@ -64,21 +64,21 @@
 
 @media (max-width: 799px) {
     .booking {
-        margin-top: 6rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        margin-top: 6rem !important;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
         flex-direction: column;
     }
 
     .booking ~ * {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 
     .booking_img {
         height: 25vh;
         width: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
     
     .details {
@@ -86,8 +86,8 @@
     }
 
     .details * {
-        margin-right: 0;
-        margin-left: 0;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 
     .detail_text {
@@ -95,7 +95,7 @@
     }
 
     .detail_video {
-        margin-bottom: 1rem;
+        margin-bottom: 1rem !important;
     }
 
     .detail_video video {

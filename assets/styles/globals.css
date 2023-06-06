@@ -56,16 +56,16 @@ body {
     }
 
     .footer_inner > div {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem !important;
     }
     /* border: 2px solid black !important; */
 }
 
 @media (max-width: 799px) {
     footer.footer {
-        padding-top: 2.5rem;
-        padding-bottom: 1.5rem;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
+        padding-top: 2.5rem !important;
+        padding-bottom: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        padding-left: 1.5rem !important;
     }
 }

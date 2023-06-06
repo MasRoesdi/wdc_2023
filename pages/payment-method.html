@@ -48,7 +48,7 @@
             <a href="../pages/about.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">About Us</a>
             <a href="../pages/destination.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">Destination</a>
             <a href="" class="font-['Raleway'] font-bold" onclick="closeMenu()">Trip Plan</a>
-            <a href="" class="font-['Raleway'] font-bold" onclick="closeMenu()">Contact Us</a>
+            <a href="../pages/contact.html" class="font-['Raleway'] font-bold" onclick="closeMenu()">Contact Us</a>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14 mt-8 md:hidden" onclick="closeMenu()">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -62,97 +62,127 @@
             <h1 class="font-['Poppins'] text-2xl font-medium text-[#1E1E1E] text-center">Select Payment Method</h1>
             <h2 class="mt-[3.5rem] font-['Poppins'] text-xl text-[#1E1E1E] font-medium">Transfer Virtual Account</h2>
 
-            <button id="mandiri" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
+            <button id="mandiri"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('mandiri', 'Mandiri')">
                 <object type="image/svg+xml" data="../assets/images/mandiri.svg" class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-start text-sm">Mandiri Virtual Account</p>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-start text-sm">Mandiri Virtual
+                    Account</p>
             </button>
-            <button id="bca" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/bca.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">BCA Virtual Account</p>
+            <button id="bca"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('bca', 'BCA')">
+                <object type="image/svg+xml" data="../assets/images/bca.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">BCA Virtual
+                    Account</p>
             </button>
-            <button id="bni" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/bni.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">BNI Virtual Account</p>
+            <button id="bni"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('bni', 'BNI')">
+                <object type="image/svg+xml" data="../assets/images/bni.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">BNI Virtual
+                    Account</p>
             </button>
-            
+
             <h2 class="mt-[1.5rem] font-['Poppins'] text-xl text-[#1E1E1E] font-medium">E-Wallet</h2>
-            <button id="ovo" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/ovo.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">OVO</p>
+            <button id="ovo"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('ovo', 'OVO')">
+                <object type="image/svg+xml" data="../assets/images/ovo.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">OVO</p>
             </button>
-            <button id="gopay" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/gopay.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Gopay</p>
+            <button id="gopay"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('gopay', 'Gopay')">
+                <object type="image/svg+xml" data="../assets/images/gopay.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Gopay</p>
             </button>
-            <button id="dana" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/dana.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Dana</p>
+            <button id="dana"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('dana', 'Dana')">
+                <object type="image/svg+xml" data="../assets/images/dana.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Dana</p>
             </button>
-            <button id="flip" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/flip.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Flip</p>
+            <button id="flip"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('flip', 'Flip')">
+                <object type="image/svg+xml" data="../assets/images/flip.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Flip</p>
             </button>
-            <button id="paypal" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/paypal.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Paypal</p>
+            <button id="paypal"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('paypal', 'Paypal')">
+                <object type="image/svg+xml" data="../assets/images/paypal.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Paypal</p>
             </button>
-            <button id="gpay" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/Gpay.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Gpay</p>
+            <button id="gpay"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('gpay', 'Gpay')">
+                <object type="image/svg+xml" data="../assets/images/Gpay.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Gpay</p>
             </button>
-            <button id="mastercard" class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/mastercard.svg"  class="w-[3rem]"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5 text-sm text-start">Mastercard</p>
+            <button id="mastercard"
+                class="w-full flex items-center p-5 hover:bg-slate-100 border-b border-[#1E1E1E80] focus:bg-[#4F94D74D]"
+                onclick="selectMethod('mastercard', 'Mastercard')">
+                <object type="image/svg+xml" data="../assets/images/mastercard.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Mastercard</p>
             </button>
-            <button id="visa" class="w-full flex items-center p-5 hover:bg-slate-100 focus:bg-[#4F94D74D]">
-                <object type="image/svg+xml" data="../assets/images/visa.svg"></object>
-                <p class="font-['Poppins'] text-[#1E1E1EB2] text-xl font-medium ml-5">Visa</p>
+            <button id="visa" class="w-full flex items-center p-5 hover:bg-slate-100 focus:bg-[#4F94D74D]"
+                onclick="selectMethod('visa', 'Visa')">
+                <object type="image/svg+xml" data="../assets/images/visa.svg" class="w-[3rem]"></object>
+                <p class="font-['Poppins'] text-[#1E1E1EB2] md:text-xl font-medium ml-5 text-sm text-start">Visa</p>
             </button>
         </div>
         <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
-            <div class="w-full bg-white border border-[#1E1E1E4D] rounded-[20px] p-7" style="box-shadow: 0px 335px 134px rgba(0, 0, 0, 0.01), 0px 188px 113px rgba(0, 0, 0, 0.05), 0px 84px 84px rgba(0, 0, 0, 0.09), 0px 21px 46px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
+            <div class="w-full bg-white border border-[#1E1E1E4D] rounded-[20px] p-7"
+                style="box-shadow: 0px 335px 134px rgba(0, 0, 0, 0.01), 0px 188px 113px rgba(0, 0, 0, 0.05), 0px 84px 84px rgba(0, 0, 0, 0.09), 0px 21px 46px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);">
                 <object data="../assets/images/logo_tripwander.svg" type="image/svg+xml" class="w-40 m-auto"></object>
                 <div class="flex gap-x-5 items-center mt-10">
-                    <img src="../assets/images/payment_raja_ampat.jpg" alt="payment_raja_ampat" class="rounded-[16px] w-[9.3rem] h-[7.5rem] lg:h-[6.25rem] object-cover">
-                    <h1 class="text-[#1E1E1E] font-['Poppins'] font-semibold text-xl lg:text-3xl">Trip to Raja Ampat 3 Days 2 Nights</h1>
+                    <img src="../assets/images/payment_raja_ampat.jpg" alt="payment_raja_ampat"
+                        class="rounded-[16px] w-[9.3rem] h-[7.5rem] lg:h-[6.25rem] object-cover">
+                    <h1 class="text-[#1E1E1E] font-['Poppins'] font-semibold text-xl lg:text-3xl">Trip to Raja Ampat 3
+                        Days 2 Nights</h1>
                 </div>
                 <div class="mt-10 flex flex-col gap-y-4">
-                    <div class="flex w-full justify-between gap-x-1">
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Payment method</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Virtual Account - </p>
+                    <div class="grid grid-cols-2 items-center gap-x-1">
+                            <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Payment method</p>
+                            <p id="displaySelectedMethod"
+                                class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">Virtual Account -
+                            </p>
                     </div>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Tourist Destinations</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] truncate">Raja Ampat, Papua</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] truncate text-end">Raja Ampat, Papua</p>
                     </div>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Tour Duration</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">3 Days 2 Nights</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">3 Days 2 Nights</p>
                     </div>
                     <hr>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Promo Code</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">-</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">-</p>
                     </div>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Subtotal</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 560.000,00</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">Rp 560.000,00</p>
                     </div>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">PPN(11%)</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 61.600,00</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">Rp 61.600,00</p>
                     </div>
-                    <div class="flex w-full justify-between gap-x-1">
+                    <div class="grid grid-cols-2 items-center gap-x-1">
                         <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1E]">Total</p>
-                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2]">Rp 621.600,00</p>
+                        <p class="font-['Poppins'] text-sm md:text-2xl text-[#1E1E1EB2] text-end">Rp 621.600,00</p>
                     </div>
                 </div>
-                <a href="" class="w-full p-4 bg-[#4F94D7] block text-center mt-10 font-['Poppins'] text-md md:text-2xl text-white rounded-[10px] focus:outline outline-offset-2 outline-[#4F94D7] ">Pay</a>
+                <a href=""
+                    class="w-full p-4 bg-[#4F94D7] block text-center mt-10 font-['Poppins'] text-md md:text-2xl text-white rounded-[10px] focus:outline outline-offset-2 outline-[#4F94D7] ">Pay</a>
             </div>
         </div>
     </section>
 
-    <footer class="footer flex items-center px-8 py-16">
+    <footer class="footer flex items-center px-6 py-16">
         <div class="footer_inner w-full flex justify-between">
             <div class="footer_copy flex flex-col">
                 <img class="mb-1 text-lg" src="../assets/images/Travelopia.png" alt="Travelopia logo">
@@ -164,7 +194,7 @@
                 <a class="mb-1 text-lg" href="../pages/about.html">About Us</a>
                 <a class="mb-1 text-lg" href="../pages/destination.html">Destination</a>
                 <a class="mb-1 text-lg" href="#">Trip Plan</a>
-                <a class="mb-1 text-lg" href="#">Contact Us</a>
+                <a class="mb-1 text-lg" href="../pages/contact.html">Contact Us</a>
             </div>
             <div class="flex flex-col">
                 <h3 class="font-medium text-2xl mb-3">Information</h3>
@@ -196,6 +226,7 @@
     </footer>
 
     <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/payment-method.js"></script>
 </body>
 
 </html>

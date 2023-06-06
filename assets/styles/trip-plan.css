@@ -1,3 +1,7 @@
 #section1{
     background-image: url(../images/bg_trip_plan.jpg);
 }
+#image1, #image2, #image3, #image4{
+    background-image: url(../images/trip_to_labuhan_bajo_backgorund.jpg);
+    box-shadow: -315px 0px 126px rgba(0, 0, 0, 0.01), -177px 0px 106px rgba(0, 0, 0, 0.05), -79px 0px 79px rgba(0, 0, 0, 0.09), -20px 0px 43px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1) !important;
+}

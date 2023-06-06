@@ -190,6 +190,47 @@
 }
 
 @media (max-width: 699px) {
+    .banner {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .general {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .pros {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .facilities {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .teams {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .teams_inner {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .tours {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
     .pros_item p {
         font-size: 1rem;
         max-width: 50vw;

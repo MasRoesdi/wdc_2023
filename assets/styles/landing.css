@@ -101,8 +101,9 @@ header .card{
     color: var(--main);
 }
 
-.destination_place {
-    max-width: 29.25vw;
+.destination_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .destination_place p {
@@ -214,8 +215,8 @@ header .card{
 }
 
 @media (max-width: 1049px) {
-    .destination_place {
-        max-width: 40vw;
+    .destination_inner {
+        grid-template-columns: 1fr 1fr;
     }
 
     .plan_inner {
@@ -250,8 +251,30 @@ header .card{
 }
 
 @media (max-width:699px) {
+    #about-us {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .destination {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .destination_inner {
+        grid-template-columns: 1fr;
+    }
+
     .destination_place {
-        max-width: 85vw;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .plan {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
     }
 
     .plan_inner form {
@@ -260,5 +283,28 @@ header .card{
 
     .plan_form_name input {
         width: 37.5vw;
+    }
+
+    .testimony {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .testimony_person:first-child {
+        margin-left: 1.5rem;
+    }
+
+    .testimony_person:last-child {
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .testimony_person {
+        min-width: 92.5vw;
+    }
+
+    .testimony_person p {
+        font-size: 14px;
     }
 }

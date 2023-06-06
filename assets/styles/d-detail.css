@@ -64,8 +64,15 @@
 
 @media (max-width: 799px) {
     .booking {
-        margin-top: 8rem;
+        margin-top: 6rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
         flex-direction: column;
+    }
+
+    .booking ~ * {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
 
     .booking_img {

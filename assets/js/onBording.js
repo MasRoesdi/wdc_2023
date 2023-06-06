@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         background_peta_indonesia.style.opacity = '1'
     }, 2000)
 
-    var textP = "EXPLORE THE WONDERFULL OF";
+    var textP = "EXPLORE THE WONDERFUL OF";
     var speedP = 100; // Kecepatan pengetikan dalam milidetik
     var iP = 0;
 
